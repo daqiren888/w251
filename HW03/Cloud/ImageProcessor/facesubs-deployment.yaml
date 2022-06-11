@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: facesubs
+spec:
+  selector:
+    matchLabels:
+      app: facesubs
+  replicas: 1 # tells deployment to run 1 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: facesubs
+    spec:
+      containers:
+      - name: facesubs
+        image: facesubs:v1 
+        volumeMounts:
+        - mountPath: /mys3bucket
+          name: host-directory
+        securityContext:
+          privileged: true
+      volumes:
+      - name: host-directory
+        hostPath:
+          path: /mys3bucket
+  
+        
+        
+        
+        
+        
+        
