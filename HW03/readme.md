@@ -1,3 +1,6 @@
+<img src="readmefile/hw3.png" width="2000"/>
+
+
 # JETSON: 
 
 I use a ssh tunnel logged in Jetson and AWS instance for running everything from my local computer.
@@ -44,9 +47,8 @@ Kubectl apply -f  messagelogger-deployment.yaml
 
 ### A LIST OF THE JESTON PODS
 
-![My Image](readmefile/hw3-p1.png)
-<img src="readmefile/hw3.png" width="2000"/>
-![My Image](readmefile/hw3image.jpg)
+<img src="readmefile/hw3-p1.png" width="1000"/>
+
 
 # CLOUD INSTANCE: 
 
