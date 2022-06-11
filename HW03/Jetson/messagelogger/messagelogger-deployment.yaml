@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: messagelogger
+spec:
+  selector:
+    matchLabels:
+      app: messagelogger
+  replicas: 1 # tells deployment to run 1 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: messagelogger
+    spec:
+      containers:
+      - name: messagelogger
+        image: messagelogger:v1
+        ports:
+        - containerPort: 1883
+

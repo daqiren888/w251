@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cameraface
+spec:
+  selector:
+    matchLabels:
+      app: cameraface
+  replicas: 1 # tells deployment to run 1 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: cameraface
+    spec:
+      containers:
+      - name: cameraface
+        image: cameraface:v1
+        volumeMounts:
+        - mountPath: /dev/video1
+          name: dev-video1
+        securityContext:
+          privileged: true
+      volumes:
+      - name: dev-video1
+        hostPath:
+          path: /dev/video
