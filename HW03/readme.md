@@ -53,7 +53,15 @@ Kubectl apply -f  messagelogger-deployment.yaml
 
 # CLOUD INSTANCE: 
 
-CloudMQTTBroker: 
+### Kubernetes instead of Docker has been used on the cloud side.
+
+The inbound rule in network security has been modified to deploy kubenetes on cloud.
+
+<img src="Readmefile/hw3-p5.png" width="500"/>
+
+ 
+
+### CloudMQTTBroker: 
 The docker files, deployment and service file used for the local broker container can be found in CloudMQTTBroker.  
 
 Docker build -t mosquitto:v1 . \
