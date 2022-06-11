@@ -44,7 +44,8 @@ Kubectl apply -f  messagelogger-deployment.yaml
 
 ### A LIST OF THE JESTON PODS
 
-![alt text](https://github.com/daqiren888/w251/tree/main/HW03/readmefile/hw3image.jpg?raw=true)
+![My Image](readmefile/hw3-p1.png)
+
 ![My Image](readmefile/hw3image.jpg)
 
 # CLOUD INSTANCE: 
