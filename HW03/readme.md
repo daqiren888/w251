@@ -85,8 +85,15 @@ In this work, I use 2 methods to upload the image file to s3fs, please refer the
 function to transfer to s3fs: \
 s3 = boto3.client("s3", aws_access_key_id='xxxxxxxxxxx', aws_secret_access_key='xxxxxxxxxxxxxxx')
 
-(2) mount my s3fs folder as a local shared folder, namely /mys3bucket, and save the image file into the shared folder /mys3bucket dicrectly. The path to my local shared folder mounted to s3fs: \
+(2) mount my s3fs folder as a local shared folder, namely /mys3bucket, and save the image file into the shared folder /mys3bucket dicrectly. 
+
+command line to mount s3fs to my AWS instance ( the script is in mount.sh file )  :
+s3fs drenhw3 -o use_cache=/tmp -o allow_other -o uid=1001 -o mp_umask=002 -o multireq_max=5 /mys3bucket -o nonempty
+
+The path to my local shared folder mounted to s3fs: \
 save_path = '/mys3bucket/' 
+
+
 
 ### My FACE ON CLOUD: 
 
