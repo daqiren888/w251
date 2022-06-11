@@ -82,6 +82,6 @@ save_path = '/mys3bucket/'
 
 ### My FACE ON CLOUD: 
 
-<img src="readmefile/hw3image.jpg" width="500"/>
+<img src="readmefile/hw3image.jpg" width="200"/>
 
 
