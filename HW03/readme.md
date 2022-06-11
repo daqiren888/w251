@@ -38,7 +38,7 @@ The docker file, forwarder.py and deployment file used for the forwarder contain
 Docker build -t forwarder:v1 . \
 Kubectl apply -f  forwarder-deployment.yaml 
 
-<img src="readmefile/hw3-p2.png" width="500"/>
+<img src="https://github.com/daqiren888/w251/tree/main/HW03/readmefile/hw3-p2.png" width="500"/>
 
 ### Message Logger
 
