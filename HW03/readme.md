@@ -38,7 +38,7 @@ The docker file, forwarder.py and deployment file used for the forwarder contain
 Docker build -t forwarder:v1 . \
 Kubectl apply -f  forwarder-deployment.yaml 
 
-<img src="readmefile/hw3-p1.png" width="500"/>
+<img src="readmefile/hw3-p2.png" width="500"/>
 
 ### Message Logger
 
@@ -49,7 +49,7 @@ Kubectl apply -f  messagelogger-deployment.yaml
 
 ### A LIST OF THE JESTON PODS
 
-<img src="readmefile/hw3-p2.png" width="500"/>
+<img src="readmefile/hw3-p3.png" width="500"/>
 
 # CLOUD INSTANCE: 
 
@@ -67,6 +67,8 @@ The docker files, facesubs.py and deployment files used for image processor cont
 Docker build -t facesubs:v1 . \
 Kubectl apply -f facesubs-deployment.yaml
 
+<img src="readmefile/hw3-p4.png" width="500"/>
+
 ### FILE UPLOADING
 
 In this work, I use 2 methods to upload the image file to s3fs, please refer the code in facesubs.py:
@@ -79,3 +81,7 @@ s3 = boto3.client("s3", aws_access_key_id='xxxxxxxxxxx', aws_secret_access_key='
 save_path = '/mys3bucket/' 
 
 ### My FACE ON CLOUD: 
+
+<img src="readmefile/hw3image.jpg" width="500"/>
+
+
