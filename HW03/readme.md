@@ -86,6 +86,6 @@ The link:
 https://drenhw3.s3.us-west-1.amazonaws.com/face90.jpg
 
 
-<img src="readmefile/hw3image.jpg" width="200"/>
+<img src="Readmefile/hw3image.jpg" width="200"/>
 
 
