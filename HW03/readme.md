@@ -38,6 +38,8 @@ The docker file, forwarder.py and deployment file used for the forwarder contain
 Docker build -t forwarder:v1 . \
 Kubectl apply -f  forwarder-deployment.yaml 
 
+<img src="readmefile/hw3-p1.png" width="1000"/>
+
 ### Message Logger
 
 The docker file, python and deployment file used for the message logger container can be found in ./messagelogger folder
@@ -47,8 +49,7 @@ Kubectl apply -f  messagelogger-deployment.yaml
 
 ### A LIST OF THE JESTON PODS
 
-<img src="readmefile/hw3-p1.png" width="1000"/>
-
+<img src="readmefile/hw3-p2.png" width="1000"/>
 
 # CLOUD INSTANCE: 
 
