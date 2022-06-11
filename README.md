@@ -1,4 +1,8 @@
 # W251 - Deep Learning in the Cloud and at the Edge
+
+# Work Repo 
+
+# Da Qi Ren
  
 
 Week	Content
