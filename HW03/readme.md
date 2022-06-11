@@ -77,7 +77,7 @@ Kubectl apply -f facesubs-deployment.yaml
 
 <img src="Readmefile/hw3-p4.png" width="500"/>
 
-### FILE UPLOADING
+### FILE TRANSFER TO CLOUD USING 2 METHODS: boto3 or mounting shared folder: 
 
 In this work, I use 2 methods to upload the image file to s3fs, please refer the code in facesubs.py:
 
