@@ -21,7 +21,7 @@ from botocore.exceptions import ClientError
 save_path = '/mys3bucket/'
 
 # (Method #1) function to transfer to s3fs: 
-s3 = boto3.client("s3", aws_access_key_id='AKIAYYJTXWM2J2HMQHNI', aws_secret_access_key='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')
+s3 = boto3.client("s3", aws_access_key_id='AK***********IA', aws_secret_access_key='cp************************83')
 
 
 
