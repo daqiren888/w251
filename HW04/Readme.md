@@ -18,7 +18,7 @@ Add a small weight decay to your Adam optimiser.
 After you are happy with the results, download the notebook as a html and submit it to ISVC, together with the highest AUC score you achieved.
 You can get started here.
 
-## Final AUC 0.92
+## Final AUC 0.9223
 
 ## Final Model
 MyBombasticMLP( \
