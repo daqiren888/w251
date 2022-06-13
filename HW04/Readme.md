@@ -21,7 +21,7 @@ device = 'cuda' \
 model = model.to(device) 
 
 
-
+## HW04 Requirement
 
 You will run this homework in colab, and build your own MLP architecture.
 Provided with the homework is a dataset and the pipeline to process the data and load to GPU. Please make sure you are comfortable with the preprocessing of the data.
