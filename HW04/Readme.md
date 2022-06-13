@@ -3,22 +3,22 @@
 ### Final AUC 0.92
 
 ### Final Model
-MyBombasticMLP(
-  (fc1): Linear(in_features=100000, out_features=192, bias=True)
-  (fc2): Linear(in_features=192, out_features=64, bias=True)
-  (fc3): Linear(in_features=64, out_features=1, bias=True)
-  (m): Sigmoid()
-  (droput): Dropout(p=0.2, inplace=False)
+MyBombasticMLP( \
+  (fc1): Linear(in_features=100000, out_features=192, bias=True) \
+  (fc2): Linear(in_features=192, out_features=64, bias=True) \
+  (fc3): Linear(in_features=64, out_features=1, bias=True) \
+  (m): Sigmoid() \
+  (droput): Dropout(p=0.2, inplace=False) \
 )
 
 ### Final Parameters
-batch_size = 512
-optimizer = torch.optim.Adam(model.parameters(), lr=1e-3, weight_decay=0.0001)
-criterion = nn.BCELoss()
-#criterion = nn.CrossEntropyLoss()
-#criterion = nn.Binary_CrossEntropyWithLogits
-device = 'cuda'
-model = model.to(device)
+batch_size = 512 \
+optimizer = torch.optim.Adam(model.parameters(), lr=1e-3, weight_decay=0.0001) \
+criterion = nn.BCELoss() \
+#criterion = nn.CrossEntropyLoss() \
+#criterion = nn.Binary_CrossEntropyWithLogits \
+device = 'cuda' \
+model = model.to(device) 
 
 
 
