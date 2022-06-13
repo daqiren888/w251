@@ -1,26 +1,5 @@
 # Homework 4: DL 101
 
-### Final AUC 0.92
-
-### Final Model
-MyBombasticMLP( \
-  (fc1): Linear(in_features=100000, out_features=192, bias=True) \
-  (fc2): Linear(in_features=192, out_features=64, bias=True) \
-  (fc3): Linear(in_features=64, out_features=1, bias=True) \
-  (m): Sigmoid() \
-  (droput): Dropout(p=0.2, inplace=False) \
-)
-
-### Final Parameters
-batch_size = 512 \
-optimizer = torch.optim.Adam(model.parameters(), lr=1e-3, weight_decay=0.0001) \
-criterion = nn.BCELoss() \
-#criterion = nn.CrossEntropyLoss() \
-#criterion = nn.Binary_CrossEntropyWithLogits \
-device = 'cuda' \
-model = model.to(device) 
-
-
 ## HW04 Requirement
 
 You will run this homework in colab, and build your own MLP architecture.
@@ -38,3 +17,24 @@ Experiment with increasing or decreasing batch size. Or a good way to regularise
 Add a small weight decay to your Adam optimiser.
 After you are happy with the results, download the notebook as a html and submit it to ISVC, together with the highest AUC score you achieved.
 You can get started here.
+
+## Final AUC 0.92
+
+## Final Model
+MyBombasticMLP( \
+  (fc1): Linear(in_features=100000, out_features=192, bias=True) \
+  (fc2): Linear(in_features=192, out_features=64, bias=True) \
+  (fc3): Linear(in_features=64, out_features=1, bias=True) \
+  (m): Sigmoid() \
+  (droput): Dropout(p=0.2, inplace=False) \
+)
+
+## Final Parameters
+batch_size = 512 \
+optimizer = torch.optim.Adam(model.parameters(), lr=1e-3, weight_decay=0.0001) \
+criterion = nn.BCELoss() \
+#criterion = nn.CrossEntropyLoss() \
+#criterion = nn.Binary_CrossEntropyWithLogits \
+device = 'cuda' \
+model = model.to(device) 
+
