@@ -30,6 +30,9 @@ I tried different start LR from 0.001 - 0.0001. Then I used cosine scheduler.
 I setup Epoch = 30, the top 1 accuracy reached 61% when epoch = 27. 
 
 
+### Extra credit challange
+I tried using resnet50 (hw5_simple.py) with minor modificaitons. 
+
 ### Submission
 
 Training logs: hw5_train.log
