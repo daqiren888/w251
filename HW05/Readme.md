@@ -35,6 +35,5 @@ I setup Epoch = 30, the top 1 accuracy reached 61% when epoch = 27.
 Training logs: hw5_train.log
 
 Coding and other files are on github
-
-https://github.com/daqiren888/w251/edit/main/HW05/Readme.md
-
+ 
+https://github.com/daqiren888/w251/tree/main/HW05
