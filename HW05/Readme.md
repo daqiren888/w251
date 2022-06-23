@@ -31,7 +31,7 @@ I setup Epoch = 30, the top 1 accuracy reached 61% when epoch = 27.
 
 
 ### Extra credit challange
-I tried using resnet50 (hw5_simple.py) with minor modificaitons. 
+I tried using resnet50 (please refer to hw5_simple.py in this folder) with minor modificaitons. 
 
 ### Submission
 
