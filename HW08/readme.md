@@ -5,7 +5,7 @@
 
 #### 1: Annotate some data from the Tesla cam:
 I convert the video into images to use the images for annotation
-![plot](./screenshots/P1/png)
+![plot](./screenshots/P1.png)
 
 I use the EfficientDet detector to annotate about images,owever I couldn't have done 300 images due to my time limitation. i attach one sample that I have created with two classes. Recommended: 'Car' and 'Truck'
 
