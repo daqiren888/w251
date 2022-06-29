@@ -16,6 +16,8 @@ I use the EfficientDet detector to annotate about images,owever I couldn't have 
 
 I used MakeSense AI to annotate the image. The annotations are the coco format.
 
+![plot](./screenshots/P4.png)
+
 I used Active Learning, train for as many epochs as needed to cross the 0.25 mAP@.5. Because I couldn't have 300 Tesla Cam labeled images, I used coco128 images instead. I hope this can get me some cridits. 
 
 Thank you very much. 
