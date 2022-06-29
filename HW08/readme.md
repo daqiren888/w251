@@ -9,8 +9,9 @@ I convert the video into images to use the images for annotation
 ![plot](./screenshots/P2.png)
 
 
-I use the EfficientDet detector to annotate about images,owever I couldn't have done 300 images due to my time limitation. i attach one sample that I have created with two classes. Recommended: 'Car' and 'Truck'
+I use the EfficientDet detector to annotate about images. I couldn't have done 300 images due to my time limitation, here I attach one sample that I have created with two classes. Recommended: 'Car' and 'Truck'
 
+![plot](./screenshots/extract0009.jpg)
 ![plot](./screenshots/P3.png)
 
 
