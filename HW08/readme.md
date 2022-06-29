@@ -3,13 +3,9 @@
 
 #### This homework is to create a small domain - specific dataset and use publicly available assets to create a custom models.
 
-#####  Annotate some data from the Tesla cam:I convert the video into images to use the images for annotation
-
-#### I have  train a custom object detector on it, proving that you can overfit on it -- e.g. similarly to the coco128 dataset, 
-
-you can train and validate on the same dataset, making sure that your mAP@.5 is modest, over 0.25 (25%)
-
-Notes:
+#### 1: Annotate some data from the Tesla cam:
+I convert the video into images to use the images for annotation
+!(./screenshots/P1/png)
 
 I use the EfficientDet detector to annotate about images,owever I couldn't have done 300 images due to my time limitation. i attach one sample that I have created with two classes. Recommended: 'Car' and 'Truck'
 
