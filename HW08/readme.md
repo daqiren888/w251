@@ -18,6 +18,11 @@ I used MakeSense AI to annotate the image. The annotations are the coco format.
 
 ![plot](./screenshots/P4.png)
 
-I used Active Learning, train for as many epochs as needed to cross the 0.25 mAP@.5. Because I couldn't have 300 Tesla Cam labeled images, I used coco128 images instead. I hope this can get me some cridits. 
+
+#### I used Active Learning in training
+
+- I have trained for as many epochs as needed to cross the 0.25 mAP@.5. 
+
+- Because I couldn't have 300 Tesla Cam labeled images, I used coco128 images instead. I hope this can get me some cridits. 
 
 Thank you very much. 
