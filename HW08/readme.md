@@ -25,4 +25,7 @@ I used MakeSense AI to annotate the image. The annotations are the coco format.
 
 - Because I couldn't have 300 Tesla Cam labeled images, I used coco128 images instead. I hope this can get me some cridits. 
 
+#### please find my code in [HW08.ipynb](HW08.ipynb)
+
+
 Thank you very much. 
