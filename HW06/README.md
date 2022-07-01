@@ -38,9 +38,15 @@ AgingTV ages a video stream in realtime, and adds scratches and dust. \
 
 - Source code and Gstreamer "server" pipeline used.
 
+-Answer: 
 
+- starts the "server" broadcasting the packets (udp) to the IP Address 127.0.01 on port 8001. The server broadcasts the stream using RTP that hs h265 ecnoded.
 
+gst-launch-1.0 videotestsrc  ! nvvidconv ! omxh265enc insert-vui=1 ! h265parse ! rtph265pay config-interval=1 ! udpsink host=127.0.0.1 port=5000 sync=false -e 
 
+- listens for the packets and decodes the RTP stream and displays it on the screen.
+
+gst-launch-1.0 udpsrc port=5000 ! application/x-rtp, media=video, encoding-name=H265 ! rtph265depay ! h265parse ! nvv4l2decoder ! nvvidconv ! video/x-raw, format=I420 ! nv3dsink -e
 
 
 
