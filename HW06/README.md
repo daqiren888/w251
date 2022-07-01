@@ -48,34 +48,27 @@ gst-launch-1.0 videotestsrc  ! nvvidconv ! omxh265enc insert-vui=1 ! h265parse !
 
 gst-launch-1.0 udpsrc port=5000 ! application/x-rtp, media=video, encoding-name=H265 ! rtph265depay ! h265parse ! nvv4l2decoder ! nvvidconv ! video/x-raw, format=I420 ! nv3dsink -e
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 ## Part 2: Model optimization and quantization
 
-In lab, you saw to how use leverage TensorRT with TensorFlow.  For this homework, you'll look at another way to levarage TensorRT with Pytorch via the Jetson Inference library (https://github.com/dusty-nv/jetson-inference).
+- Q1： The base model you used
 
-You'll want to train a custom image classification model, using either the fruit example or your own set of classes.
+For the base model, I used native pytorch baseline with resnet18. 
 
-Like in the lab, you'll want to first baseline the your model, looking a the number of images per second it can process.  You may train the model using your Jetson device and the Jetson Inference scripts or train on a GPU eanabled server/virtual machine.  Once you have your baseline, follow the steps/examples outlined in the Jetson Inference to run your model with TensorRT (the defaults used are fine) and determine the number of images per second that are processed.
+- Q2:A description of your data set
 
-You may use either the container apporach or build the library from source.
+I used dataset with 30 images: I took out 30 images from imagenet dataset, i.e. 30 image-sub-folders from train and val folders repectively.
 
-For part 2, you'll need to submit:
-- The base model you used
-- A description of your data set
-- How long you trained your model, how many epochs you specified, and the batch size.
-- Native Pytorch baseline
-- TensorRT performance numbers
+- Q3:How long you trained your model, how many epochs you specified, and the batch size.
+
+I setup 30 epoches, betch size = 48. The traing run 7.2 hours.
+
+- Q4: Native Pytorch baseline
+
+I record 12 images per second
+
+- Q5: TensorRT performance numbers
+
+I record 63 images per second, about 5 times faster than the baseline approach. 
 
