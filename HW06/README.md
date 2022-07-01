@@ -1,13 +1,6 @@
 # Homework 6
 
 
-This homework requires a Jetson device.  If you do not have a device, please just sumbit the HW answering just questions 2 and 3 from Part 1.
-
-
-This homework covers some use of GStreamer and model optimization.  It builds on the week 6 lab and completing the lab first is hightly recommended.   
-
-This is an ungraded assignment
-
 ## Part 1: GStreamer
 
 1. In the lab, you used the Ndida sink nv3dsink; Nvidia provides a another sink, nveglglessink.  Convert the following sink to use nveglglessink.
@@ -15,13 +8,50 @@ This is an ungraded assignment
 gst-launch-1.0 v4l2src device=/dev/video0 ! xvimagesink
 ```
 
-2. What is the difference between a property and a capability?  How are they each expressed in a pipeline?
+Q1: What is the difference between a property and a capability?  
 
-3. Explain the following pipeline, that is explain each piece of the pipeline, desribing if it is an element (if so, what type), property, or capability.  What does this pipeline do?
+- Answer: Properties are used to describe extra information for capabilities. A property consists of a key (a string) and a value. There are different possible value types that can be used. There is a distinct difference between the possible capabilities of a pad , the allowed caps of a pad and lastly negotiatedcaps. we can get values of properties in a set of capabilities by querying individual properties of one structure.
+
+Q2: How are they each expressed in a pipeline?
+
+-Answer: InGstream， pad as the input/output interface of element, the direction is the data flow from the src pad (production data) of one element to the sink pad (consumption data) of another element.
+
+
+Q3: Explain the following pipeline, that is explain each piece of the pipeline, desribing if it is an element (if so, what type), property, or capability.  What does this pipeline do?
 
 ```
 gst-launch-1.0 v4l2src device=/dev/video0 ! video/x-raw, framerate=30/1 ! videoconvert ! agingtv scratch-lines=10 ! videoconvert ! xvimagesink sync=false
 ```
+- Answer
+gst-launch-1.0 v4l2src 
+( Launch Gstream) 
+device=/dev/video0 !  video/x-raw, framerate=30/1 ! 
+( Catch the pictures from USB webcam; video has 30 frames per sec)  
+videoconvert !  
+(change color space or format) 
+agingtv  scratch-lines=10 ! 
+AgingTV ages a video stream in realtime, and adds scratches and dust.
+videoconvert ! 
+(change color space or format) 
+xvimagesink 
+（Use XWindow output） 
+sync=false
+(Synchronisation is disabled entirely by setting the object sync property to FALSE)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 4. GStreamer pipelines may also be used from Python and OpenCV.  For example:
 ```
@@ -51,9 +81,35 @@ In the lab, you saw how to stream using Gstreamer.  Using the lab and the above 
 
 For part 1, you'll need to submit:
 - Answer to question 1
+
+
+
 - Answer to question 2
+
+
+
 - Answer to question 3
+
+
+
 - Source code and Gstreamer "server" pipeline used.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## Part 2: Model optimization and quantization
