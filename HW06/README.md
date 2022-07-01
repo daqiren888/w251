@@ -19,8 +19,9 @@ gst-launch-1.0 v4l2src device=/dev/video0 ! video/x-raw, framerate=30/1 ! videoc
 ```
 
 - Answer
-gst-launch-1.0 v4l2src 
-( Launch Gstream) 
+
+(1) gst-launch-1.0 v4l2src \
+( Launch Gstream) \
 device=/dev/video0 !  video/x-raw, framerate=30/1 ! 
 ( Catch the pictures from USB webcam; video has 30 frames per sec)  
 videoconvert !  
