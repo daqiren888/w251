@@ -36,7 +36,7 @@ AgingTV ages a video stream in realtime, and adds scratches and dust. \
 (Synchronisation is disabled entirely by setting the object sync property to FALSE)
 
 
-- Source code and Gstreamer "server" pipeline used.
+Q4: Source code and Gstreamer "server" pipeline used.
 
 -Answer: 
 
