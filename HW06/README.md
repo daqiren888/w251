@@ -66,9 +66,9 @@ I setup 30 epoches, betch size = 48. The traing run 7.2 hours.
 
 - Q4: Native Pytorch baseline
 
-I record 12 images per second
+I record 12 FPS images per second.
 
 - Q5: TensorRT performance numbers
 
-I record 63 images per second, about 5 times faster than the baseline approach. 
+I record 63 FPS, about 5 times faster than the baseline approach. 
 
