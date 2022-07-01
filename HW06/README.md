@@ -22,17 +22,17 @@ gst-launch-1.0 v4l2src device=/dev/video0 ! video/x-raw, framerate=30/1 ! videoc
 
 (1) gst-launch-1.0 v4l2src \
 ( Launch Gstream) \
-device=/dev/video0 !  video/x-raw, framerate=30/1 ! 
-( Catch the pictures from USB webcam; video has 30 frames per sec)  
-videoconvert !  
-(change color space or format) 
-agingtv  scratch-lines=10 ! 
-AgingTV ages a video stream in realtime, and adds scratches and dust.
-videoconvert ! 
-(change color space or format) 
-xvimagesink 
-（Use XWindow output） 
-sync=false
+(2) device=/dev/video0 !  video/x-raw, framerate=30/1 ! \
+( Catch the pictures from USB webcam; video has 30 frames per sec)  \
+(3) videoconvert !  \
+(change color space or format) \
+(4) agingtv  scratch-lines=10 ! \
+AgingTV ages a video stream in realtime, and adds scratches and dust. \
+(5) videoconvert ! \
+(change color space or format) \ 
+(6) xvimagesink \
+（Use XWindow output） \
+(7) sync=false \
 (Synchronisation is disabled entirely by setting the object sync property to FALSE)
 
 
