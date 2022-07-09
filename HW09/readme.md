@@ -10,7 +10,7 @@ for imagenet training, Repectively.
 
   
 ####  Applied PyTorch native AMP
-####  Documented runs using Tensorboard or Weights and Biases
+####  Documented runs using Tensorboard  
 ####  Good scalability, my reaults shown using 2 nodes the performance is ~2x faster than on a single GPU machine; and using 3 nodes the performance is ~3x times faster than on a single GPU machine.
 
 #### 5 epochs were executed.
