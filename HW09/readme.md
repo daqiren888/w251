@@ -1,5 +1,7 @@
 # HW09
 
+All files are in the github repo. 
+
 In this homework, I used multi-node/multi-gpu model training, specifically I used Pytorch DDP on  
 
 (1) 1 node run for a baseline performance (one g4dn.2xlarge instances, 8 vCPUs)  
