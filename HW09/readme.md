@@ -1,5 +1,22 @@
 # HW09
 
+In this homework, I used multi-node/multi-gpu model training, specifically I used Pytorch DDP on  
+
+(1) 1 node run for a baseline performance (one g4dn.2xlarge instances, 8 vCPUs)  
+(2) 2 nodes in parallel (two g4dn.2xlarge instances. Each has 8 vCPUs)  
+(3) 3 nodes in parallel (three g4dn.2xlarge instances. Each has 8 vCPUs)  
+
+for imagenet training, Repectively. 
+
+  
+####  Applied PyTorch native AMP
+####  Documented runs using Tensorboard or Weights and Biases
+####  Good scalability, my reaults shown using 2 nodes the performance is ~2x faster than on a single GPU machine; and using 3 nodes the performance is ~3x times faster than on a single GPU machine.
+
+#### 5 epochs were executed.
+#### GPUs utilizations are all > 95% on parallel platforms. 
+
+ 
 
 ##  1. Using 1 node 
 
