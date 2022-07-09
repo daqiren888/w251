@@ -25,5 +25,5 @@
 #### The GPU usage on each node, they reached >95% usages.
 <img src="./analysis/P3.png" width="600"/>
 
-#### The performance of 3 nodes in parallel is 5 hours for 5 epochs, that was exactely 1/3 of the baseline performance of 1 node.
+#### The result of each node after 3 nodes 5 epochs run.  
 <img src="./analysis/P4.png" width="600"/>
