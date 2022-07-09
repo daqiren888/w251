@@ -5,7 +5,7 @@
 
 #### Baseline performance is 15 hours for 5 epochs
 
-![plot](./analysis/1node_TB.png){width=50%}
+![plot](./analysis/1node_TB.png){width=30%}
  
 
 ## 2. Using 2 nodes parallel and distributed pytorch computing
