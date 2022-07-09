@@ -14,4 +14,12 @@
 ## 3. Using 3 nodes parallel and distributed pytorch computing
 #### The performance of 3 nodes in parallel is 5 hours for 5 epochs, that was exactely 1/3 of the baseline performance of 1 node.
 <img src="./analysis/3node_TB.png" width="500"/>
- 
+
+
+
+## 4. Using 3 nodes parallel and distributed pytorch computing
+#### The performance of 3 nodes in parallel is 5 hours for 5 epochs, that was exactely 1/3 of the baseline performance of 1 node.
+<img src="./analysis/p1.png" width="500"/>
+<img src="./analysis/p2.png" width="500"/>
+<img src="./analysis/p3.png" width="500"/>
+<img src="./analysis/p4.png" width="500"/>
