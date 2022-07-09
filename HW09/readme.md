@@ -17,10 +17,11 @@
 
 
 ## 4. Screenshots in 3 nodes parallel distributed pytorch computing
-#### The performance of 3 nodes in parallel is 5 hours for 5 epochs, that was exactely 1/3 of the baseline performance of 1 node.
-<img src="./analysis/P1.png" width="600"/>
-#### The performance of 3 nodes in parallel is 5 hours for 5 epochs, that was exactely 1/3 of the baseline performance of 1 node.
+#### AWS node configuration and screenshot of parallel execution. 
+
 <img src="./analysis/P2.png" width="600"/>
+<img src="./analysis/P1.png" width="600"/>
+
 #### The performance of 3 nodes in parallel is 5 hours for 5 epochs, that was exactely 1/3 of the baseline performance of 1 node.
 <img src="./analysis/P3.png" width="600"/>
 #### The performance of 3 nodes in parallel is 5 hours for 5 epochs, that was exactely 1/3 of the baseline performance of 1 node.
