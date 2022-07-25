@@ -44,10 +44,10 @@ In this homework, I trained a Lunar Lander module to land properly using Jetson 
 
         #######################
         
-1995    : Episode || Reward:  303.1633172527662         || Average Reward:  253.1940158838653    epsilon:  0.00998645168764533
-1996    : Episode || Reward:  195.16712949470258        || Average Reward:  252.71620855445806   epsilon:  0.00998645168764533
-1997    : Episode || Reward:  320.4031225054513         || Average Reward:  255.55198799757997   epsilon:  0.00998645168764533
-1998    : Episode || Reward:  285.6891690700164         || Average Reward:  256.02868412792424   epsilon:  0.00998645168764533
+1995    : Episode || Reward:  303.1633172527662         || Average Reward:  253.1940158838653    epsilon:  0.00998645168764533 \
+1996    : Episode || Reward:  195.16712949470258        || Average Reward:  252.71620855445806   epsilon:  0.00998645168764533\
+1997    : Episode || Reward:  320.4031225054513         || Average Reward:  255.55198799757997   epsilon:  0.00998645168764533\
+1998    : Episode || Reward:  285.6891690700164         || Average Reward:  256.02868412792424   epsilon:  0.00998645168764533\
 1999    : Episode || Reward:  268.1372233505265         || Average Reward:  256.01345174663055   epsilon:  0.00998645168764533
 
         #######################
