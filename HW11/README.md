@@ -52,9 +52,13 @@ In this homework, I trained a Lunar Lander module to land properly using Jetson 
 
         #######################
         
-       
+-  Training Episode 0    
 ![episode0](./readme/episode0.gif)
+
+-  Training Episode 1000 
 ![episode0](./readme/episode1000.gif)
+
+-  Training Episode 1900
 ![episode0](./readme/episode1900.gif)
 
 
