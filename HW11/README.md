@@ -76,3 +76,11 @@ sys     0m0.088s
 ![testing_run60.gif](./readme/testing_run60.gif)
 
  
+#### Final Result
+
+Average Reward:  260.1056624914775\
+Total tests above 200:  95
+
+real    4m37.796s
+user    0m0.140s
+sys     0m0.088s
