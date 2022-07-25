@@ -59,11 +59,11 @@ In this homework, I trained a Lunar Lander module to land properly using Jetson 
 
 #### Testing Process
 
-96      : Episode || Reward:  291.718547261176
-97      : Episode || Reward:  243.1428731416763
-98      : Episode || Reward:  249.66159692830578
-99      : Episode || Reward:  290.74481702270094
-Average Reward:  260.1056624914775
+96      : Episode || Reward:  291.718547261176 \
+97      : Episode || Reward:  243.1428731416763\
+98      : Episode || Reward:  249.66159692830578\
+99      : Episode || Reward:  290.74481702270094\
+Average Reward:  260.1056624914775\
 Total tests above 200:  95
 
 real    4m37.796s
