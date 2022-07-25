@@ -1,10 +1,8 @@
 # W251 HW11 DA QI REN
 
-## What
-
 In this homework, I trained a Lunar Lander module to land properly using Jetson Nano 4G. Use Reinforcement Learning and tweak the model parameters to improve the model results.
 
-#### My modifications 
+### My modifications 
 
 (1) Configuration for PQN parameters 
 
@@ -40,7 +38,7 @@ In this homework, I trained a Lunar Lander module to land properly using Jetson 
         
         #######################
 
-#### Training Process: 
+### Training Process: 
 
         #######################
         
@@ -65,7 +63,7 @@ In this homework, I trained a Lunar Lander module to land properly using Jetson 
 ![episode0](./readme/episode1900.gif)
 
 
-#### Testing Process
+### Testing Process
 
 96      : Episode || Reward:  291.718547261176 \
 97      : Episode || Reward:  243.1428731416763\
@@ -91,7 +89,7 @@ sys     0m0.088s
 ![testing_run60.gif](./readme/testing_run60.gif)
 
  
-#### Final Result
+### Final Result
 
 Average Reward:  260.1056624914775\
 Total tests above 200:  95
