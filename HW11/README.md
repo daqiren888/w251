@@ -78,8 +78,16 @@ real    4m37.796s
 user    0m0.140s
 sys     0m0.088s
 
+- Testing run 20
+
 ![testing_run20.gif](./readme/testing_run20.gif)
+
+- Testing run 40
+
 ![testing_run40.gif](./readme/testing_run40.gif)
+
+- Testing run 60
+
 ![testing_run60.gif](./readme/testing_run60.gif)
 
  
