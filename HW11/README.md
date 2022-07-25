@@ -40,7 +40,7 @@ In this homework, I trained a Lunar Lander module to land properly using Jetson 
         
         #######################
 
-##### Training Process: 
+#### Training Process: 
 
         #######################
         
