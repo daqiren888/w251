@@ -2,9 +2,9 @@
 
 In this homework, I trained a Lunar Lander module to land properly using Jetson Nano 4G. Use Reinforcement Learning and tweak the model parameters to improve the model results.
 
-(1) the PQN parameters have been reconfigured to reach the better precision; 
-(2) the model layers have been increase by 1 layer; 
-(3) The final Average Reward:  260.1056624914775
+-  the PQN parameters have been reconfigured to reach the better precision; 
+-  the model layers have been increase by 1 layer; 
+-  The final Average Reward:  260.1056624914775
 
 
 ### My modifications 
