@@ -54,8 +54,8 @@ In this homework, I trained a Lunar Lander module to land properly using Jetson 
         
        
 ![episode0](./readme/episode0.gif)
-![episode0](episode1000.gif)
-![episode0](episode1900.gif)
+![episode0](./readme/episode1000.gif)
+![episode0](./readme/episode1900.gif)
 
 
 #### Testing Process
@@ -71,8 +71,8 @@ real    4m37.796s
 user    0m0.140s
 sys     0m0.088s
 
-![testing_run20.gif](testing_run20.gif)
-![testing_run40.gif](testing_run40.gif)
-![testing_run60.gif](testing_run60.gif)
+![testing_run20.gif](./readme/testing_run20.gif)
+![testing_run40.gif](./readme/testing_run40.gif)
+![testing_run60.gif](./readme/testing_run60.gif)
 
  
