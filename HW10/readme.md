@@ -16,5 +16,5 @@ After the discriminant network can be used, let it assist the generation network
 
 <img src="./outputimages/497.png">
 <img src="./outputimages/498.png">
-![Alt text](outputimages/498.png "Optional title")
+![Alt text](outputimages/498.png)
 
