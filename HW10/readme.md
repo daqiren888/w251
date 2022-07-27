@@ -14,6 +14,6 @@ After the discriminant network can be used, let it assist the generation network
 
 ### Share a copy of the output image from the last step. more pictures are in [output images](./outputimages)
 
-<img src="./outputimages/496.png">
-<img src="./outputimages/496.png">
+<img src="./outputimages/504-1.png">
+<img src="./outputimages/504-2.png">
 
