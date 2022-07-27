@@ -12,7 +12,7 @@
 The growth of the discriminator can theoretically be improved gradually, because the training of the discriminant network is always fed to it alternately with true and false samples, and let it know the true and false, which is equivalent to supervised learning,
 After the discriminant network can be used, let it assist the generation network. In the worst case, the fake samples made by the generation network are too fake, which makes the discriminant network learn slowly. Therefore, the best case is that the generation network has good performance and can create Not bad fake samples, of great value to the discriminator.
 
-### Share a copy of the output image from the last step in 
+### Share a copy of the output image from the last step. more pictures are in [putput images](./outputimages)
 
 <img src="./outputimages/496.png">
 <img src="./outputimages/496.png">
