@@ -19,4 +19,5 @@ After the discriminant network can be used, let it assist the generation network
 ![Alt text](outputimages/498.png)
 
 
-![My Image](images/my-image.jpg)
+![My Image](../images/my-image.jpg)
+outputimages
