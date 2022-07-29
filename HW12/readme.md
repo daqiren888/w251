@@ -5,7 +5,7 @@ In this work, I used colab template for training Conformer-Transducer BPE Small 
 
 ### Files and Folders
 
-(1) Notebook 1 : Preparation and system setup The config file for all Conformer, set it to small.
+(1) Notebook 1 : Preparation and system setup The config file for all Conformer, set it to small.\
 (2) Notebook 2 : Traning ASR with Tansducers\
 
 -ipynb notebooks\
@@ -37,16 +37,21 @@ In this work, I used colab template for training Conformer-Transducer BPE Small 
 9.380     Total estimated model params size (MB)
 
 
+### Nemo 
+
 Sanity Checking: 0it [00:00, ?it/s]
 [NeMo W 2022-07-29 06:57:05 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/torch/utils/data/dataloader.py:560: UserWarning: This DataLoader will create 16 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
       cpuset_checked))
+    
     
 Training: 0it [00:00, ?it/s]
 [NeMo W 2022-07-29 06:57:19 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/numba/cuda/dispatcher.py:488: NumbaPerformanceWarning: Grid size 16 will likely result in GPU under-utilization due to low occupancy.
       warn(NumbaPerformanceWarning(msg))
     
+    
 [NeMo W 2022-07-29 06:57:20 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/numba/cuda/dispatcher.py:488: NumbaPerformanceWarning: Grid size 16 will likely result in GPU under-utilization due to low occupancy.
       warn(NumbaPerformanceWarning(msg))
+    
     
 [NeMo W 2022-07-29 06:57:21 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/numba/cuda/dispatcher.py:488: NumbaPerformanceWarning: Grid size 1 will likely result in GPU under-utilization due to low occupancy.
       warn(NumbaPerformanceWarning(msg))
