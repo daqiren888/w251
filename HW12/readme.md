@@ -31,10 +31,10 @@ In this work, I used colab template for training Conformer-Transducer BPE Small 
 5 | spec_augmentation | SpectrogramAugmentation           | 0     \
 6 | wer               | RNNTBPEWER                        | 0     \
 ------------------------------------------------------------------------\
-2.3 M     Trainable params
-0         Non-trainable params
-2.3 M     Total params
-9.380     Total estimated model params size (MB)
+2.3 M     Trainable params\
+0         Non-trainable params\
+2.3 M     Total params\
+9.380     Total estimated model params size (MB)\
 
 
 ### Nemo 
