@@ -1,0 +1,135 @@
+[NeMo W 2022-07-29 06:55:57 optimizers:55] Apex was not found. Using the lamb or fused_adam optimizer will error out.
+[NeMo I 2022-07-29 06:56:00 mixins:168] Tokenizer SentencePieceTokenizer initialized with 32 tokens
+[NeMo I 2022-07-29 06:56:00 collections:192] Dataset loaded with 948 files totalling 0.71 hours
+[NeMo I 2022-07-29 06:56:00 collections:193] 0 files were filtered totalling 0.00 hours
+[NeMo W 2022-07-29 06:56:00 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/torch/utils/data/dataloader.py:560: UserWarning: This DataLoader will create 16 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+      cpuset_checked))
+    
+[NeMo I 2022-07-29 06:56:00 collections:192] Dataset loaded with 130 files totalling 0.10 hours
+[NeMo I 2022-07-29 06:56:00 collections:193] 0 files were filtered totalling 0.00 hours
+[NeMo I 2022-07-29 06:56:00 collections:192] Dataset loaded with 130 files totalling 0.10 hours
+[NeMo I 2022-07-29 06:56:00 collections:193] 0 files were filtered totalling 0.00 hours
+[NeMo I 2022-07-29 06:56:00 features:200] PADDING: 16
+[NeMo W 2022-07-29 06:56:01 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/torch/nn/modules/rnn.py:65: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.1 and num_layers=1
+      "num_layers={}".format(dropout, num_layers))
+    
+[NeMo I 2022-07-29 06:56:01 rnnt_models:202] Using RNNT Loss : warprnnt_numba
+    Loss warprnnt_numba_kwargs: {'fastemit_lambda': 0.001, 'clamp': -1.0}
+[NeMo I 2022-07-29 06:56:01 audio_preprocessing:491] Numba CUDA SpecAugment kernel is being used
+[NeMo W 2022-07-29 06:56:01 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/torchmetrics/utilities/prints.py:36: UserWarning: Torchmetrics v0.9 introduced a new argument class property called `full_state_update` that has
+                    not been set for this class (RNNTWER). The property determines if `update` by
+                    default needs access to the full metric state. If this is not the case, significant speedups can be
+                    achieved and we recommend setting this to `False`.
+                    We provide an checking function
+                    `from torchmetrics.utilities import check_forward_full_state_property`
+                    that can be used to check if the `full_state_update=True` (old and potential slower behaviour,
+                    default for now) or if `full_state_update=False` can be used safely.
+                    
+      warnings.warn(*args, **kwargs)
+    
+[NeMo W 2022-07-29 06:56:01 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/torchmetrics/utilities/prints.py:36: UserWarning: Torchmetrics v0.9 introduced a new argument class property called `full_state_update` that has
+                    not been set for this class (RNNTBPEWER). The property determines if `update` by
+                    default needs access to the full metric state. If this is not the case, significant speedups can be
+                    achieved and we recommend setting this to `False`.
+                    We provide an checking function
+                    `from torchmetrics.utilities import check_forward_full_state_property`
+                    that can be used to check if the `full_state_update=True` (old and potential slower behaviour,
+                    default for now) or if `full_state_update=False` can be used safely.
+                    
+      warnings.warn(*args, **kwargs)
+    
+[NeMo I 2022-07-29 06:56:24 exp_manager:287] Experiments will be logged at experiments/Transducer-Model/2022-07-29_06-56-24
+[NeMo I 2022-07-29 06:56:24 exp_manager:661] TensorboardLogger has been set up
+[NeMo W 2022-07-29 06:56:24 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/pytorch_lightning/trainer/trainer.py:2319: LightningDeprecationWarning: `Trainer.weights_save_path` has been deprecated in v1.6 and will be removed in v1.8.
+      rank_zero_deprecation("`Trainer.weights_save_path` has been deprecated in v1.6 and will be removed in v1.8.")
+    
+[NeMo W 2022-07-29 06:56:24 exp_manager:896] The checkpoint callback was told to monitor a validation value and trainer's max_steps was set to -1. Please ensure that max_steps will run for at least 10 epochs to ensure that checkpointing will not error out.
+[NeMo I 2022-07-29 06:57:01 modelPT:579] Optimizer config = Novograd (
+    Parameter Group 0
+        amsgrad: False
+        betas: [0.9, 0.0]
+        eps: 1e-08
+        grad_averaging: False
+        lr: 0.05
+        weight_decay: 0.001
+    )
+[NeMo I 2022-07-29 06:57:01 lr_scheduler:837] Scheduler "<nemo.core.optim.lr_scheduler.CosineAnnealing object at 0x7f83f10dd650>" 
+    will be used during training (effective maximum steps = 3000) - 
+    Parameters : 
+    (warmup_steps: null
+    warmup_ratio: null
+    min_lr: 1.0e-06
+    last_epoch: -1
+    max_steps: 3000
+    )
+[NeMo W 2022-07-29 06:57:05 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/torch/utils/data/dataloader.py:560: UserWarning: This DataLoader will create 16 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+      cpuset_checked))
+    
+[NeMo W 2022-07-29 06:57:19 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/numba/cuda/dispatcher.py:488: NumbaPerformanceWarning: [1mGrid size 16 will likely result in GPU under-utilization due to low occupancy.[0m
+      warn(NumbaPerformanceWarning(msg))
+    
+[NeMo W 2022-07-29 06:57:20 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/numba/cuda/dispatcher.py:488: NumbaPerformanceWarning: [1mGrid size 16 will likely result in GPU under-utilization due to low occupancy.[0m
+      warn(NumbaPerformanceWarning(msg))
+    
+[NeMo W 2022-07-29 06:57:21 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/numba/cuda/dispatcher.py:488: NumbaPerformanceWarning: [1mGrid size 1 will likely result in GPU under-utilization due to low occupancy.[0m
+      warn(NumbaPerformanceWarning(msg))
+    
+[NeMo W 2022-07-29 06:57:22 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/numba/cuda/dispatcher.py:488: NumbaPerformanceWarning: [1mGrid size 16 will likely result in GPU under-utilization due to low occupancy.[0m
+      warn(NumbaPerformanceWarning(msg))
+    
+[NeMo W 2022-07-29 06:57:22 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/numba/cuda/dispatcher.py:488: NumbaPerformanceWarning: [1mGrid size 1 will likely result in GPU under-utilization due to low occupancy.[0m
+      warn(NumbaPerformanceWarning(msg))
+    
+[NeMo W 2022-07-29 06:57:29 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/numba/cuda/dispatcher.py:488: NumbaPerformanceWarning: [1mGrid size 4 will likely result in GPU under-utilization due to low occupancy.[0m
+      warn(NumbaPerformanceWarning(msg))
+    
+[NeMo W 2022-07-29 06:57:30 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/torch/utils/data/dataloader.py:560: UserWarning: This DataLoader will create 16 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+      cpuset_checked))
+    
+[NeMo W 2022-07-29 07:07:52 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/pytorch_lightning/trainer/trainer.py:2029: LightningDeprecationWarning: `Trainer.training_type_plugin` is deprecated in v1.6 and will be removed in v1.8. Use `Trainer.strategy` instead.
+      "`Trainer.training_type_plugin` is deprecated in v1.6 and will be removed in v1.8. Use"
+    
+[NeMo W 2022-07-29 07:09:09 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/torch/utils/data/dataloader.py:560: UserWarning: This DataLoader will create 16 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+      cpuset_checked))
+    
+[NeMo W 2022-07-29 07:10:07 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/torchmetrics/utilities/prints.py:36: UserWarning: Torchmetrics v0.9 introduced a new argument class property called `full_state_update` that has
+                    not been set for this class (RNNTBPEWER). The property determines if `update` by
+                    default needs access to the full metric state. If this is not the case, significant speedups can be
+                    achieved and we recommend setting this to `False`.
+                    We provide an checking function
+                    `from torchmetrics.utilities import check_forward_full_state_property`
+                    that can be used to check if the `full_state_update=True` (old and potential slower behaviour,
+                    default for now) or if `full_state_update=False` can be used safely.
+                    
+      warnings.warn(*args, **kwargs)
+    
+[NeMo I 2022-07-29 07:10:07 rnnt_bpe_models:391] Changed decoding strategy to 
+    strategy: alsd
+    compute_hypothesis_token_set: false
+    preserve_alignments: null
+    fused_batch_size: null
+    greedy:
+      max_symbols_per_step: 10
+      preserve_alignments: false
+      max_symbols: 10
+    beam:
+      beam_size: 4
+      search_type: default
+      score_norm: true
+      return_best_hypothesis: false
+      tsd_max_sym_exp_per_step: 50
+      alsd_max_target_len: 5.0
+      nsc_max_timesteps_expansion: 1
+      nsc_prefix_alpha: 1
+      maes_num_steps: 2
+      maes_prefix_alpha: 1
+      maes_expansion_gamma: 2.3
+      maes_expansion_beta: 2
+      language_model: null
+      softmax_temperature: 1.0
+      preserve_alignments: false
+      tsd_max_sym_exp: 10
+    
+[NeMo W 2022-07-29 07:10:12 nemo_logging:349] /usr/local/lib/python3.7/dist-packages/torch/utils/data/dataloader.py:560: UserWarning: This DataLoader will create 16 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+      cpuset_checked))
+    

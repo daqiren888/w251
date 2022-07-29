@@ -1,0 +1,25 @@
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+
+  | Name              | Type                              | Params
+------------------------------------------------------------------------
+0 | preprocessor      | AudioToMelSpectrogramPreprocessor | 0     
+1 | encoder           | ConvASREncoder                    | 2.3 M 
+2 | decoder           | RNNTDecoder                       | 35.4 K
+3 | joint             | RNNTJoint                         | 47.3 K
+4 | loss              | RNNTLoss                          | 0     
+5 | spec_augmentation | SpectrogramAugmentation           | 0     
+6 | wer               | RNNTBPEWER                        | 0     
+------------------------------------------------------------------------
+2.3 M     Trainable params
+0         Non-trainable params
+2.3 M     Total params
+9.380     Total estimated model params size (MB)
+Epoch 9, global step 600: 'val_wer' reached 0.43855 (best 0.43855), saving model to '/content/gdrive/MyDrive/HW12/experiments/Transducer-Model/2022-07-29_06-56-24/checkpoints/Transducer-Model--val_wer=0.4386-epoch=9.ckpt' as top 3
+Epoch 19, global step 1200: 'val_wer' reached 0.22898 (best 0.22898), saving model to '/content/gdrive/MyDrive/HW12/experiments/Transducer-Model/2022-07-29_06-56-24/checkpoints/Transducer-Model--val_wer=0.2290-epoch=19.ckpt' as top 3
+Epoch 29, global step 1800: 'val_wer' reached 0.14618 (best 0.14618), saving model to '/content/gdrive/MyDrive/HW12/experiments/Transducer-Model/2022-07-29_06-56-24/checkpoints/Transducer-Model--val_wer=0.1462-epoch=29.ckpt' as top 3
+Epoch 39, global step 2400: 'val_wer' reached 0.09573 (best 0.09573), saving model to '/content/gdrive/MyDrive/HW12/experiments/Transducer-Model/2022-07-29_06-56-24/checkpoints/Transducer-Model--val_wer=0.0957-epoch=39.ckpt' as top 3
+Epoch 49, global step 3000: 'val_wer' reached 0.08668 (best 0.08668), saving model to '/content/gdrive/MyDrive/HW12/experiments/Transducer-Model/2022-07-29_06-56-24/checkpoints/Transducer-Model--val_wer=0.0867-epoch=49.ckpt' as top 3
+Restoring states from the checkpoint path at /content/gdrive/MyDrive/HW12/experiments/Transducer-Model/2022-07-29_06-56-24/checkpoints/Transducer-Model--val_wer=0.0867-epoch=49.ckpt
+Restored all states from the checkpoint file at /content/gdrive/MyDrive/HW12/experiments/Transducer-Model/2022-07-29_06-56-24/checkpoints/Transducer-Model--val_wer=0.0867-epoch=49.ckpt
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
