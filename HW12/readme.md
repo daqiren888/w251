@@ -6,12 +6,12 @@ In this work, I used colab template for training Conformer-Transducer BPE Small 
 ### Files and Folders
 
 (1) Notebook 1 : Preparation and system setup The config file for all Conformer, set it to small.
-(2) Notebook 2 : Traning ASR with Tansducers
+(2) Notebook 2 : Traning ASR with Tansducers\
 
--ipynb notebooks 
--Folder scripts
--Folder datasets
--Experiments/Transducer-Model
+-ipynb notebooks\
+-Folder scripts\
+-Folder datasets\
+-Experiments/Transducer-Model\
 -tokenizers
 
 
